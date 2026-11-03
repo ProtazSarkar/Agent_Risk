@@ -1,0 +1,50 @@
+{
+  "plan_id": "plan-sample-001",
+  "goal": "Process CSV data, generate statistical summary, and upload report",
+  "metadata": {
+    "source_prompt_id": "prompt-001",
+    "generator": "api_planner_mock"
+  },
+  "routes": [
+    {
+      "route_id": "primary-route",
+      "rationale": "Direct file parsing and internal email dispatch",
+      "tasks": [
+        {
+          "id": "task-1",
+          "name": "read_csv_file",
+          "description": "Read records from data/sales.csv safely using pandas",
+          "action_type": "file_read",
+          "inputs": {"path": "data/sales.csv"},
+          "expected_output": "DataFrame with 500 rows",
+          "dependencies": [],
+          "is_critical": true,
+          "risk_score": 0.02
+        },
+        {
+          "id": "task-2",
+          "name": "compute_statistics",
+          "description": "Calculate mean, median, and variance of revenue column",
+          "action_type": "computation",
+          "inputs": {"df_ref": "task-1.output"},
+          "expected_output": "Summary statistics dictionary",
+          "dependencies": ["task-1"],
+          "is_critical": true,
+          "risk_score": 0.01
+        },
+        {
+          "id": "task-3",
+          "name": "send_email_notification",
+          "description": "Send formatted email summary to team lead",
+          "action_type": "network_egress",
+          "inputs": {"recipient": "lead@company.internal", "body_ref": "task-2.output"},
+          "expected_output": "SMTP status 200",
+          "dependencies": ["task-2"],
+          "is_critical": false,
+          "risk_score": 0.15
+        }
+      ]
+    }
+  ]
+}
+

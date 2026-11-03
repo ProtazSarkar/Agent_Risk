@@ -1,0 +1,24 @@
+stage: "stage_01"
+description: "API Planner task decomposition with Unified XGBoost Shield baseline"
+
+planner:
+  provider: "groq"
+  model: "llama-3.1-70b-versatile"
+  temperature: 0.1
+
+xgboost:
+  n_estimators: 150
+  max_depth: 4
+  learning_rate: 0.05
+  subsample: 0.8
+  colsample_bytree: 0.8
+
+thresholds:
+  warning: 0.35
+  block: 0.70
+
+paths:
+  sample_prompts: "data/sample/sample_prompts.json"
+  output_dags: "data/processed/stage_01_dags.json"
+  model_output: "models/xgboost/risk_classifier.json"
+  report_output: "docs/reports/stage_01_baseline_report.json"
