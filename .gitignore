@@ -90,13 +90,17 @@ models/lora_adapters/*
 *.onnx
 *.safetensors
 
-# Project specific: Datasets (keep directories & sample data only)
-data/raw/*
-!data/raw/.gitkeep
-data/processed/*
-!data/processed/.gitkeep
-data/ground_truth/*
-!data/ground_truth/.gitkeep
+# Project specific: Datasets - Completely ignore all data contents and downloaded benchmarks
+data/*
+!data/.gitkeep
+!data/README.md
+
+# Large dataset files & subdirectories in experiments (keeps .py scripts like process_dataset.py)
+experiments/**/data/*
+!experiments/**/data/.gitkeep
+!experiments/**/data/**/.gitkeep
+!experiments/**/data/*.py
+*.parquet
 
 # Output logs and reports
 docs/reports/*

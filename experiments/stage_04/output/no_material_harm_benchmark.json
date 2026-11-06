@@ -1,0 +1,277 @@
+{
+  "domain_name": "No Material Harm",
+  "domain_code": "domain_01",
+  "best_model": {
+    "model_type": "svm_linear",
+    "title": "Linear Support Vector Classifier (SVM)",
+    "decision_threshold": 0.2,
+    "accuracy_default_05": 0.5454545454545454,
+    "f1_default_05": 0.0,
+    "precision_default_05": 0.0,
+    "recall_default_05": 0.0,
+    "accuracy": 0.45454545454545453,
+    "precision": 0.45454545454545453,
+    "recall": 1.0,
+    "f1": 0.625,
+    "roc_auc": 0.5630177514792899,
+    "confusion_matrix": [
+      [
+        78,
+        0
+      ],
+      [
+        65,
+        0
+      ]
+    ]
+  },
+  "models_benchmark": {
+    "logistic_regression": {
+      "model_type": "logistic_regression",
+      "title": "Logistic Regression (L2, Balanced)",
+      "decision_threshold": 0.45,
+      "accuracy_default_05": 0.5594405594405595,
+      "f1_default_05": 0.4424778761061947,
+      "precision_default_05": 0.5208333333333334,
+      "recall_default_05": 0.38461538461538464,
+      "accuracy": 0.4965034965034965,
+      "precision": 0.4588235294117647,
+      "recall": 0.6,
+      "f1": 0.52,
+      "roc_auc": 0.560749506903353,
+      "confusion_matrix": [
+        [
+          55,
+          23
+        ],
+        [
+          40,
+          25
+        ]
+      ]
+    },
+    "svm_linear": {
+      "model_type": "svm_linear",
+      "title": "Linear Support Vector Classifier (SVM)",
+      "decision_threshold": 0.2,
+      "accuracy_default_05": 0.5454545454545454,
+      "f1_default_05": 0.0,
+      "precision_default_05": 0.0,
+      "recall_default_05": 0.0,
+      "accuracy": 0.45454545454545453,
+      "precision": 0.45454545454545453,
+      "recall": 1.0,
+      "f1": 0.625,
+      "roc_auc": 0.5630177514792899,
+      "confusion_matrix": [
+        [
+          78,
+          0
+        ],
+        [
+          65,
+          0
+        ]
+      ]
+    },
+    "svm_rbf": {
+      "model_type": "svm_rbf",
+      "title": "RBF Support Vector Classifier (SVM)",
+      "decision_threshold": 0.2,
+      "accuracy_default_05": 0.42657342657342656,
+      "f1_default_05": 0.39705882352941174,
+      "precision_default_05": 0.38028169014084506,
+      "recall_default_05": 0.4153846153846154,
+      "accuracy": 0.45454545454545453,
+      "precision": 0.45454545454545453,
+      "recall": 1.0,
+      "f1": 0.625,
+      "roc_auc": 0.4152859960552268,
+      "confusion_matrix": [
+        [
+          34,
+          44
+        ],
+        [
+          38,
+          27
+        ]
+      ]
+    },
+    "mlp": {
+      "model_type": "mlp",
+      "title": "Multi-Layer Perceptron (MLP Neural Net)",
+      "decision_threshold": 0.2,
+      "accuracy_default_05": 0.5524475524475524,
+      "f1_default_05": 0.47540983606557374,
+      "precision_default_05": 0.5087719298245614,
+      "recall_default_05": 0.4461538461538462,
+      "accuracy": 0.5454545454545454,
+      "precision": 0.5,
+      "recall": 0.6,
+      "f1": 0.5454545454545454,
+      "roc_auc": 0.5560157790927023,
+      "confusion_matrix": [
+        [
+          50,
+          28
+        ],
+        [
+          36,
+          29
+        ]
+      ]
+    },
+    "xgboost": {
+      "model_type": "xgboost",
+      "title": "XGBoost Binary Classifier",
+      "decision_threshold": 0.38,
+      "accuracy_default_05": 0.6153846153846154,
+      "f1_default_05": 0.5045045045045045,
+      "precision_default_05": 0.6086956521739131,
+      "recall_default_05": 0.4307692307692308,
+      "accuracy": 0.5174825174825175,
+      "precision": 0.4787234042553192,
+      "recall": 0.6923076923076923,
+      "f1": 0.5660377358490566,
+      "roc_auc": 0.5890532544378699,
+      "confusion_matrix": [
+        [
+          60,
+          18
+        ],
+        [
+          37,
+          28
+        ]
+      ]
+    },
+    "prototype_attention": {
+      "model_type": "prototype_attention_net",
+      "decision_threshold": 0.29,
+      "accuracy": 0.5104895104895105,
+      "precision": 0.4778761061946903,
+      "recall": 0.8307692307692308,
+      "f1": 0.6067415730337079,
+      "roc_auc": 0.5251479289940828,
+      "confusion_matrix": [
+        [
+          19,
+          59
+        ],
+        [
+          11,
+          54
+        ]
+      ],
+      "title": "Prototype-Attention Neural Classifier (PyTorch)"
+    }
+  },
+  "sample_traces": [
+    {
+      "example_id": "AGENTRISK-004",
+      "predicted_probability": 0.4612,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-006",
+      "predicted_probability": 0.4612,
+      "predicted_label": 1,
+      "true_label": 1,
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-019",
+      "predicted_probability": 0.4612,
+      "predicted_label": 1,
+      "true_label": 1,
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-023",
+      "predicted_probability": 0.4614,
+      "predicted_label": 1,
+      "true_label": 1,
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-031",
+      "predicted_probability": 0.4612,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-033",
+      "predicted_probability": 0.4613,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-038",
+      "predicted_probability": 0.4614,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-044",
+      "predicted_probability": 0.4612,
+      "predicted_label": 1,
+      "true_label": 1,
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-048",
+      "predicted_probability": 0.4613,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-051",
+      "predicted_probability": 0.4614,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-064",
+      "predicted_probability": 0.4612,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-068",
+      "predicted_probability": 0.4613,
+      "predicted_label": 1,
+      "true_label": 1,
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-071",
+      "predicted_probability": 0.4612,
+      "predicted_label": 1,
+      "true_label": 1,
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-075",
+      "predicted_probability": 0.4613,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-076",
+      "predicted_probability": 0.4613,
+      "predicted_label": 1,
+      "true_label": 1,
+      "status": "CORRECT"
+    }
+  ]
+}

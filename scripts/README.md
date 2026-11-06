@@ -18,3 +18,4 @@ python scripts/fetch_semeval_data.py --dataset AgentRisk/agentrisk-data-2027 --s
 # Run in offline mode (uses cached or high-fidelity synthetic benchmark instances)
 python scripts/fetch_semeval_data.py --offline
 ```
+

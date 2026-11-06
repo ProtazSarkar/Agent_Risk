@@ -1,0 +1,147 @@
+{
+  "model_architecture": "SemanticPrototypeClassifier",
+  "description": "Multi-Prototype SentenceTransformer Keys + Query & Key Projections + Attentive Head",
+  "learned_scale": 9.989343643188477,
+  "learned_bias": 0.002664269180968404,
+  "prob_min": 0.01180102489888668,
+  "prob_max": 0.9838674068450928,
+  "prob_mean": 0.43310701847076416,
+  "default_threshold": 0.5,
+  "optimal_threshold": 0.22,
+  "accuracy_default": 0.5384615384615384,
+  "f1_default": 0.47619047619047616,
+  "precision_default": 0.4918032786885246,
+  "recall_default": 0.46153846153846156,
+  "accuracy_opt": 0.4965034965034965,
+  "f1_opt": 0.52,
+  "precision_opt": 0.4588235294117647,
+  "recall_opt": 0.6,
+  "roc_auc": 0.557199211045365,
+  "confusion_matrix_default": [
+    [
+      47,
+      31
+    ],
+    [
+      35,
+      30
+    ]
+  ],
+  "confusion_matrix_opt": [
+    [
+      32,
+      46
+    ],
+    [
+      26,
+      39
+    ]
+  ],
+  "sample_traces": [
+    {
+      "example_id": "AGENTRISK-004",
+      "predicted_probability": 0.0145,
+      "predicted_label": 0,
+      "true_label": 0,
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-006",
+      "predicted_probability": 0.144,
+      "predicted_label": 0,
+      "true_label": 1,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-019",
+      "predicted_probability": 0.2321,
+      "predicted_label": 0,
+      "true_label": 1,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-023",
+      "predicted_probability": 0.1066,
+      "predicted_label": 0,
+      "true_label": 1,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-031",
+      "predicted_probability": 0.2321,
+      "predicted_label": 0,
+      "true_label": 0,
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-033",
+      "predicted_probability": 0.0406,
+      "predicted_label": 0,
+      "true_label": 0,
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-038",
+      "predicted_probability": 0.6414,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-044",
+      "predicted_probability": 0.037,
+      "predicted_label": 0,
+      "true_label": 1,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-048",
+      "predicted_probability": 0.5507,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-051",
+      "predicted_probability": 0.9429,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-064",
+      "predicted_probability": 0.0205,
+      "predicted_label": 0,
+      "true_label": 0,
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-068",
+      "predicted_probability": 0.0232,
+      "predicted_label": 0,
+      "true_label": 1,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-071",
+      "predicted_probability": 0.6399,
+      "predicted_label": 1,
+      "true_label": 1,
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-075",
+      "predicted_probability": 0.9231,
+      "predicted_label": 1,
+      "true_label": 0,
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-076",
+      "predicted_probability": 0.1566,
+      "predicted_label": 0,
+      "true_label": 1,
+      "status": "MISS"
+    }
+  ]
+}

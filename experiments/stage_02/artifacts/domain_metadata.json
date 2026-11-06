@@ -1,0 +1,37 @@
+{
+  "model_name": "all-MiniLM-L6-v2",
+  "num_domains": 5,
+  "embedding_dim": 384,
+  "domains": {
+    "emergency_risk": {
+      "id": 1,
+      "name": "Emergency Risk",
+      "description": "Critical system failure, physical danger, severe hazard, immediate emergency situation.",
+      "severity_level_affinity": 5
+    },
+    "authorization_access_risk": {
+      "id": 2,
+      "name": "Authorization & Access Risk",
+      "description": "Unauthorized privilege escalation, security breach, credential compromise, policy violation.",
+      "severity_level_affinity": 4
+    },
+    "data_privacy_risk": {
+      "id": 3,
+      "name": "Data Privacy Risk",
+      "description": "Sensitive personal data leak, confidential data exposure, compliance breach.",
+      "severity_level_affinity": 3
+    },
+    "operational_policy_deviation": {
+      "id": 4,
+      "name": "Operational Policy Deviation",
+      "description": "Minor workflow error, standard warning, non-critical guideline deviation.",
+      "severity_level_affinity": 2
+    },
+    "routine_safe_query": {
+      "id": 5,
+      "name": "Routine Safe Query",
+      "description": "Standard user prompt, normal operational request, zero safety risk.",
+      "severity_level_affinity": 1
+    }
+  }
+}

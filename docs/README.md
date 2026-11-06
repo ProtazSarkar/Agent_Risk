@@ -14,3 +14,4 @@ The `docs/` directory contains research specifications, mathematical formulation
 - **[`semeval_integration.md`](semeval_integration.md)**: Mapping psycholinguistic markers (urgency, deception, privilege, exfiltration) to numerical features, and full schema translation for `AgentRisk/agentrisk-data-2027`.
 - **[`plan.md`](plan.md)**: Project roadmap formalizing handwritten design notes (Items 1–11), multi-agent execution flows (Researcher $\rightarrow$ Writer $\rightarrow$ Shield), and upcoming milestones.
 - **`reports/`**: Destination for evaluation reports, benchmark metrics, and JSON run summaries (`stage_01_baseline_report.json`). Tracked via `.gitkeep`.
+

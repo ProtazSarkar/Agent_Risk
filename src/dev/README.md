@@ -35,3 +35,4 @@ class MyCustomAgent(BaseDevAgent):
 ```bash
 python -c "from src.dev.sample_agent import RiskAnalysisAgent; agent = RiskAnalysisAgent(); print(agent.act('Inspect system memory and report usage'))"
 ```
+

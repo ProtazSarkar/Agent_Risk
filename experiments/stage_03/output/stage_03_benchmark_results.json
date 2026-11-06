@@ -1,0 +1,594 @@
+{
+  "models": {
+    "1_deep_hybrid_regressor_user_ranges": {
+      "qwk": 0.12954508661162367,
+      "accuracy": 0.25874125874125875,
+      "within_1_accuracy": 0.5944055944055944,
+      "macro_f1": 0.18727167271402942,
+      "weighted_f1": 0.27844684821363136,
+      "predicted_distribution": {
+        "1": 23,
+        "2": 41,
+        "3": 53,
+        "4": 16,
+        "5": 10
+      },
+      "confusion_matrix": [
+        [
+          15,
+          18,
+          23,
+          7,
+          3
+        ],
+        [
+          0,
+          2,
+          2,
+          3,
+          1
+        ],
+        [
+          4,
+          9,
+          17,
+          1,
+          1
+        ],
+        [
+          4,
+          12,
+          11,
+          3,
+          5
+        ],
+        [
+          0,
+          0,
+          0,
+          2,
+          0
+        ]
+      ],
+      "mse": 2.561335325241089,
+      "mae": 1.3025263547897339,
+      "pred_min": 0.5721752047538757,
+      "pred_max": 5.153448581695557,
+      "pred_mean": 2.6349823474884033,
+      "thresholds": [
+        1.5,
+        2.5,
+        3.5,
+        4.5
+      ]
+    },
+    "2_deep_hybrid_regressor_opt_thresholds": {
+      "qwk": 0.14921028977442963,
+      "accuracy": 0.18181818181818182,
+      "within_1_accuracy": 0.6713286713286714,
+      "macro_f1": 0.15426065162907268,
+      "weighted_f1": 0.21990728569675938,
+      "predicted_distribution": {
+        "1": 10,
+        "2": 76,
+        "3": 44,
+        "4": 13
+      },
+      "confusion_matrix": [
+        [
+          8,
+          36,
+          18,
+          4,
+          0
+        ],
+        [
+          0,
+          2,
+          4,
+          2,
+          0
+        ],
+        [
+          2,
+          19,
+          10,
+          1,
+          0
+        ],
+        [
+          0,
+          19,
+          10,
+          6,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      ],
+      "mse": 2.232398748397827,
+      "mae": 1.2440091371536255,
+      "pred_min": 0.7660073041915894,
+      "pred_max": 4.636462688446045,
+      "pred_mean": 2.5087549686431885,
+      "thresholds": [
+        1.2602,
+        2.6377,
+        3.8814,
+        4.8683
+      ]
+    },
+    "3_deep_hybrid_classifier": {
+      "qwk": 0.10804989930633258,
+      "accuracy": 0.40559440559440557,
+      "within_1_accuracy": 0.5594405594405595,
+      "macro_f1": 0.2615603925653819,
+      "weighted_f1": 0.400411219535075,
+      "predicted_distribution": {
+        "1": 72,
+        "2": 5,
+        "3": 29,
+        "4": 34,
+        "5": 3
+      },
+      "confusion_matrix": [
+        [
+          37,
+          2,
+          12,
+          14,
+          1
+        ],
+        [
+          4,
+          1,
+          0,
+          2,
+          1
+        ],
+        [
+          15,
+          0,
+          10,
+          7,
+          0
+        ],
+        [
+          16,
+          1,
+          7,
+          10,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      ]
+    },
+    "4_hybrid_svr_regressor": {
+      "qwk": 0.22388059701492535,
+      "accuracy": 0.14685314685314685,
+      "within_1_accuracy": 0.7412587412587412,
+      "macro_f1": 0.11313842651870823,
+      "weighted_f1": 0.15712179412563537,
+      "predicted_distribution": {
+        "1": 6,
+        "2": 91,
+        "3": 4,
+        "4": 36,
+        "5": 6
+      },
+      "confusion_matrix": [
+        [
+          5,
+          46,
+          2,
+          12,
+          1
+        ],
+        [
+          1,
+          3,
+          0,
+          2,
+          2
+        ],
+        [
+          0,
+          24,
+          0,
+          8,
+          0
+        ],
+        [
+          0,
+          17,
+          2,
+          13,
+          3
+        ],
+        [
+          0,
+          1,
+          0,
+          1,
+          0
+        ]
+      ],
+      "mse": 2.0689160887635882,
+      "mae": 1.1971592232891046,
+      "pred_min": 1.447157300021106,
+      "pred_max": 4.184058145976408,
+      "pred_mean": 2.9642929753866714,
+      "thresholds": [
+        1.9236,
+        3.1513,
+        3.1726,
+        3.7426
+      ]
+    },
+    "5_hybrid_ridge_regressor": {
+      "qwk": 0.14647625784773188,
+      "accuracy": 0.21678321678321677,
+      "within_1_accuracy": 0.6433566433566433,
+      "macro_f1": 0.10954248366013072,
+      "weighted_f1": 0.11479043831985009,
+      "predicted_distribution": {
+        "2": 26,
+        "3": 112,
+        "4": 5
+      },
+      "confusion_matrix": [
+        [
+          0,
+          20,
+          45,
+          1,
+          0
+        ],
+        [
+          0,
+          1,
+          5,
+          2,
+          0
+        ],
+        [
+          0,
+          4,
+          28,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          32,
+          2,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      ],
+      "mse": 1.9169400930404663,
+      "mae": 1.2214789390563965,
+      "pred_min": 1.9835418462753296,
+      "pred_max": 3.8404321670532227,
+      "pred_mean": 2.814974546432495,
+      "thresholds": [
+        1.527,
+        2.554,
+        3.544,
+        4.299
+      ]
+    },
+    "6_hybrid_xgboost_regressor": {
+      "qwk": 0.13032145960034747,
+      "accuracy": 0.23076923076923078,
+      "within_1_accuracy": 0.6363636363636364,
+      "macro_f1": 0.11552511415525113,
+      "weighted_f1": 0.1012868410128684,
+      "predicted_distribution": {
+        "2": 28,
+        "3": 114,
+        "4": 1
+      },
+      "confusion_matrix": [
+        [
+          0,
+          20,
+          46,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          4,
+          1,
+          0
+        ],
+        [
+          0,
+          2,
+          30,
+          0,
+          0
+        ],
+        [
+          0,
+          3,
+          32,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          2,
+          0,
+          0
+        ]
+      ],
+      "mse": 1.7384068965911865,
+      "mae": 1.1867293119430542,
+      "pred_min": 1.7943021059036255,
+      "pred_max": 3.664910078048706,
+      "pred_mean": 2.6087236404418945,
+      "thresholds": [
+        1.5375,
+        2.375,
+        3.5875,
+        4.6125
+      ]
+    }
+  },
+  "sample_traces": [
+    {
+      "example_id": "AGENTRISK-004",
+      "sim_values": [
+        0.0661,
+        0.0643,
+        0.1318,
+        0.2151,
+        0.1164
+      ],
+      "calibrated_val": 4.5833,
+      "pred_fixed": 5,
+      "pred_svr": 5,
+      "true_severity": 4,
+      "status": "OFF_1"
+    },
+    {
+      "example_id": "AGENTRISK-006",
+      "sim_values": [
+        0.0209,
+        0.0265,
+        0.027,
+        0.1157,
+        0.0835
+      ],
+      "calibrated_val": 1.0774,
+      "pred_fixed": 1,
+      "pred_svr": 2,
+      "true_severity": 1,
+      "status": "OFF_1"
+    },
+    {
+      "example_id": "AGENTRISK-019",
+      "sim_values": [
+        0.0109,
+        0.0038,
+        0.0552,
+        0.0525,
+        0.1382
+      ],
+      "calibrated_val": 3.4636,
+      "pred_fixed": 3,
+      "pred_svr": 4,
+      "true_severity": 1,
+      "status": "OFF_3"
+    },
+    {
+      "example_id": "AGENTRISK-023",
+      "sim_values": [
+        -0.0153,
+        -0.059,
+        0.0128,
+        0.0852,
+        0.2064
+      ],
+      "calibrated_val": 1.1551,
+      "pred_fixed": 1,
+      "pred_svr": 2,
+      "true_severity": 1,
+      "status": "OFF_1"
+    },
+    {
+      "example_id": "AGENTRISK-031",
+      "sim_values": [
+        0.0109,
+        0.0038,
+        0.0552,
+        0.0525,
+        0.1382
+      ],
+      "calibrated_val": 3.4636,
+      "pred_fixed": 3,
+      "pred_svr": 4,
+      "true_severity": 3,
+      "status": "OFF_1"
+    },
+    {
+      "example_id": "AGENTRISK-033",
+      "sim_values": [
+        -0.031,
+        -0.0906,
+        0.0791,
+        0.0963,
+        0.0018
+      ],
+      "calibrated_val": 4.1763,
+      "pred_fixed": 4,
+      "pred_svr": 2,
+      "true_severity": 3,
+      "status": "OFF_1"
+    },
+    {
+      "example_id": "AGENTRISK-038",
+      "sim_values": [
+        -0.0403,
+        -0.1047,
+        0.0534,
+        0.0373,
+        0.1027
+      ],
+      "calibrated_val": 2.7839,
+      "pred_fixed": 3,
+      "pred_svr": 2,
+      "true_severity": 3,
+      "status": "OFF_1"
+    },
+    {
+      "example_id": "AGENTRISK-044",
+      "sim_values": [
+        0.0104,
+        -0.0049,
+        0.0625,
+        0.0726,
+        0.1463
+      ],
+      "calibrated_val": 4.3224,
+      "pred_fixed": 4,
+      "pred_svr": 4,
+      "true_severity": 1,
+      "status": "OFF_3"
+    },
+    {
+      "example_id": "AGENTRISK-048",
+      "sim_values": [
+        0.0565,
+        0.0506,
+        0.1032,
+        0.2153,
+        0.1312
+      ],
+      "calibrated_val": 3.0185,
+      "pred_fixed": 3,
+      "pred_svr": 4,
+      "true_severity": 4,
+      "status": "MATCH"
+    },
+    {
+      "example_id": "AGENTRISK-051",
+      "sim_values": [
+        -0.0626,
+        0.0371,
+        0.0069,
+        0.11,
+        0.0305
+      ],
+      "calibrated_val": 1.8446,
+      "pred_fixed": 2,
+      "pred_svr": 2,
+      "true_severity": 4,
+      "status": "OFF_2"
+    },
+    {
+      "example_id": "AGENTRISK-064",
+      "sim_values": [
+        -0.051,
+        -0.0513,
+        -0.0022,
+        0.067,
+        0.0651
+      ],
+      "calibrated_val": 4.5554,
+      "pred_fixed": 5,
+      "pred_svr": 4,
+      "true_severity": 4,
+      "status": "MATCH"
+    },
+    {
+      "example_id": "AGENTRISK-068",
+      "sim_values": [
+        -0.0057,
+        0.0409,
+        0.1653,
+        0.1246,
+        0.1388
+      ],
+      "calibrated_val": 1.7586,
+      "pred_fixed": 2,
+      "pred_svr": 2,
+      "true_severity": 1,
+      "status": "OFF_1"
+    },
+    {
+      "example_id": "AGENTRISK-071",
+      "sim_values": [
+        0.0934,
+        -0.0154,
+        0.1747,
+        0.2026,
+        0.1422
+      ],
+      "calibrated_val": 1.2425,
+      "pred_fixed": 1,
+      "pred_svr": 2,
+      "true_severity": 1,
+      "status": "OFF_1"
+    },
+    {
+      "example_id": "AGENTRISK-075",
+      "sim_values": [
+        0.0877,
+        0.089,
+        0.0353,
+        0.1172,
+        0.1853
+      ],
+      "calibrated_val": 1.8559,
+      "pred_fixed": 2,
+      "pred_svr": 3,
+      "true_severity": 4,
+      "status": "OFF_1"
+    },
+    {
+      "example_id": "AGENTRISK-076",
+      "sim_values": [
+        0.0179,
+        -0.0092,
+        0.0869,
+        0.093,
+        0.0699
+      ],
+      "calibrated_val": 2.5124,
+      "pred_fixed": 3,
+      "pred_svr": 2,
+      "true_severity": 1,
+      "status": "OFF_1"
+    }
+  ],
+  "user_thresholds": [
+    1.5,
+    2.5,
+    3.5,
+    4.5
+  ],
+  "num_features": 394
+}

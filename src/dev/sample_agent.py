@@ -73,3 +73,4 @@ class RiskAnalysisAgent(BaseDevAgent):
             "evaluations": evaluations,
             "final_permission": "DENIED" if has_blocked else "GRANTED",
         }
+

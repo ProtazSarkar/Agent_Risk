@@ -1,0 +1,82 @@
+{
+  "stage": "stage_02",
+  "features": "Domain Label Values Only (0 Embeddings)",
+  "feature_names": [
+    "sim_emergency_risk",
+    "sim_authorization_access_risk",
+    "sim_data_privacy_risk",
+    "sim_operational_policy_deviation",
+    "sim_routine_safe_query",
+    "attn_emergency_risk",
+    "attn_authorization_access_risk",
+    "attn_data_privacy_risk",
+    "attn_operational_policy_deviation",
+    "attn_routine_safe_query"
+  ],
+  "leaderboard": [
+    {
+      "name": "MLP Regressor (Domain Labels)",
+      "features": "10 Domain Values",
+      "qwk": 0.16625916870415625,
+      "accuracy": 0.35664335664335667,
+      "macro_f1": 0.2937223254900183,
+      "rmse": 1.292410153269129,
+      "pearson_r": 0.14503085357982973,
+      "latency_ms": 0.19812583923339844,
+      "thresholds": [
+        2.331,
+        2.433,
+        2.452,
+        2.859
+      ]
+    },
+    {
+      "name": "XGBoost Regressor (Domain Labels)",
+      "features": "10 Domain Values",
+      "qwk": 0.12907820025111028,
+      "accuracy": 0.2517482517482518,
+      "macro_f1": 0.19620331948493544,
+      "rmse": 1.3901760362398479,
+      "pearson_r": 0.11511534010546497,
+      "latency_ms": 1.2421607971191406,
+      "thresholds": [
+        2.393,
+        2.76,
+        3.088,
+        3.862
+      ]
+    },
+    {
+      "name": "Ridge Regressor (Domain Labels)",
+      "features": "10 Domain Values",
+      "qwk": 0.11391579427975085,
+      "accuracy": 0.3006993006993007,
+      "macro_f1": 0.26049989226459813,
+      "rmse": 1.4852268638968886,
+      "pearson_r": 0.12183567639343272,
+      "latency_ms": 0.1277923583984375,
+      "thresholds": [
+        2.798,
+        2.992,
+        3.347,
+        4.168
+      ]
+    },
+    {
+      "name": "SVR RBF (Domain Labels)",
+      "features": "10 Domain Values",
+      "qwk": 0.032669220581324265,
+      "accuracy": 0.32167832167832167,
+      "macro_f1": 0.18293909950090262,
+      "rmse": 1.6438210079463287,
+      "pearson_r": 0.04736293203146157,
+      "latency_ms": 4.922628402709961,
+      "thresholds": [
+        3.034,
+        3.238,
+        3.464,
+        4.981
+      ]
+    }
+  ]
+}

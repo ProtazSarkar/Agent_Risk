@@ -77,3 +77,16 @@ target-version = "py310"
 line-length = 100
 target-version = ['py310']
 
+[tool.pyright]
+include = ["src", "experiments", "tests"]
+extraPaths = [
+    "src",
+    "experiments",
+    "experiments/stage_01",
+    "experiments/stage_02",
+    "experiments/stage_03",
+    "experiments/stage_04",
+    "experiments/stage_04/domain_01"
+]
+
+

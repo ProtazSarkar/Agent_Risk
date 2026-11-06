@@ -69,4 +69,6 @@ class Settings(BaseSettings):
 
 # Singleton instance
 settings = Settings()
+settings.data_dir.mkdir(parents=True, exist_ok=True)
+settings.models_dir.mkdir(parents=True, exist_ok=True)
 
