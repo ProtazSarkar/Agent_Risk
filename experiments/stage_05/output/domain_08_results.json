@@ -1,0 +1,147 @@
+{
+  "domain_id": "domain_08",
+  "domain_name": "Reputational / Social / Psychological",
+  "dev_instances": 147,
+  "dev_positives": 6,
+  "accuracy_default": 0.9659863945578231,
+  "f1_default": 0.4444444444444444,
+  "precision_default": 0.6666666666666666,
+  "recall_default": 0.3333333333333333,
+  "roc_auc": 0.6252955082742316,
+  "optimal_threshold": 0.2,
+  "accuracy_opt": 0.9659863945578231,
+  "f1_opt": 0.4444444444444444,
+  "precision_opt": 0.6666666666666666,
+  "recall_opt": 0.3333333333333333,
+  "confusion_matrix_default": [
+    [
+      140,
+      1
+    ],
+    [
+      4,
+      2
+    ]
+  ],
+  "confusion_matrix_opt": [
+    [
+      140,
+      1
+    ],
+    [
+      4,
+      2
+    ]
+  ],
+  "prob_min": 0.02064857818186283,
+  "prob_max": 0.9541996717453003,
+  "prob_mean": 0.035667117685079575,
+  "prob_std": 0.10097432136535645,
+  "trace_samples": [
+    {
+      "example_id": "AGENTRISK-004",
+      "prob": 0.0214,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-051",
+      "prob": 0.0212,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-092",
+      "prob": 0.021,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-159",
+      "prob": 0.0209,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-189",
+      "prob": 0.0212,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-223",
+      "prob": 0.0213,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-282",
+      "prob": 0.0209,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-322",
+      "prob": 0.021,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-360",
+      "prob": 0.0211,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-409",
+      "prob": 0.0212,
+      "prediction": "Other (0)",
+      "ground_truth": "Reputational / Social / Psychological (1)",
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-465",
+      "prob": 0.0207,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-507",
+      "prob": 0.0211,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-536",
+      "prob": 0.0214,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-580",
+      "prob": 0.0207,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-613",
+      "prob": 0.0217,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    }
+  ]
+}

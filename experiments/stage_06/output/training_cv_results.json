@@ -1,0 +1,215 @@
+{
+  "champion_model": "HistGradientBoosting_Regressor",
+  "feature_count": 37,
+  "feature_columns": [
+    "prob_no_material_harm",
+    "prob_privacy",
+    "prob_security",
+    "prob_financial",
+    "prob_operational",
+    "prob_physical",
+    "prob_legal",
+    "prob_reputational",
+    "prob_discrimination",
+    "prob_environmental",
+    "prob_information_quality",
+    "max_harm_prob",
+    "sum_harm_prob",
+    "mean_harm_prob",
+    "std_harm_prob",
+    "harm_to_safe_ratio",
+    "domain_entropy",
+    "num_domains_ge_05",
+    "num_domains_ge_02",
+    "top1_harm_prob",
+    "top2_harm_prob",
+    "top_harm_margin",
+    "is_physical_high",
+    "is_security_high",
+    "is_financial_high",
+    "pca_0",
+    "pca_1",
+    "pca_2",
+    "pca_3",
+    "pca_4",
+    "pca_5",
+    "pca_6",
+    "pca_7",
+    "text_word_count",
+    "text_char_count",
+    "refusal_keyword_count",
+    "critical_keyword_count"
+  ],
+  "ranked_models": [
+    [
+      "HistGradientBoosting_Regressor",
+      {
+        "cv_accuracy": 0.6869217519685039,
+        "cv_accuracy_std": 0.05427193323061744,
+        "cv_qwk": 0.8601877167985723,
+        "cv_qwk_std": 0.028315886569487754,
+        "cv_within1": 0.9546013779527559,
+        "cv_mae": 0.37102608267716536,
+        "cv_time_s": 1.6189756393432617
+      }
+    ],
+    [
+      "HistGradientBoosting_Classifier",
+      {
+        "cv_accuracy": 0.708919783464567,
+        "cv_accuracy_std": 0.03541594484414186,
+        "cv_qwk": 0.8544281753181867,
+        "cv_qwk_std": 0.03379993103971553,
+        "cv_within1": 0.9514886811023622,
+        "cv_mae": 0.3615034448818898,
+        "cv_time_s": 6.431358098983765
+      }
+    ],
+    [
+      "RandomForest_Regressor",
+      {
+        "cv_accuracy": 0.6776082677165355,
+        "cv_accuracy_std": 0.01371828214662481,
+        "cv_qwk": 0.8539787095969391,
+        "cv_qwk_std": 0.025774053149811838,
+        "cv_within1": 0.9561884842519686,
+        "cv_mae": 0.38185285433070865,
+        "cv_time_s": 3.233511209487915
+      }
+    ],
+    [
+      "XGBoost_Ordinal_Regressor",
+      {
+        "cv_accuracy": 0.6931963582677165,
+        "cv_accuracy_std": 0.028600724136970606,
+        "cv_qwk": 0.8472440512322758,
+        "cv_qwk_std": 0.03069253100148435,
+        "cv_within1": 0.9483759842519686,
+        "cv_mae": 0.37565206692913383,
+        "cv_time_s": 1.037304401397705
+      }
+    ],
+    [
+      "XGBoost_Classifier",
+      {
+        "cv_accuracy": 0.7151943897637796,
+        "cv_accuracy_std": 0.014187425393101765,
+        "cv_qwk": 0.8464058597594523,
+        "cv_qwk_std": 0.0406084518836035,
+        "cv_within1": 0.9499261811023623,
+        "cv_mae": 0.3614665354330709,
+        "cv_time_s": 3.531789541244507
+      }
+    ],
+    [
+      "RandomForest_Classifier",
+      {
+        "cv_accuracy": 0.7214320866141732,
+        "cv_accuracy_std": 0.0183189559672705,
+        "cv_qwk": 0.8444819332864164,
+        "cv_qwk_std": 0.02213581566450058,
+        "cv_within1": 0.9467765748031496,
+        "cv_mae": 0.3568159448818898,
+        "cv_time_s": 1.903451681137085
+      }
+    ],
+    [
+      "Hybrid_XGB_Ensemble",
+      {
+        "cv_accuracy": 0.7151697834645669,
+        "cv_accuracy_std": 0.025101723912835387,
+        "cv_qwk": 0.8443884134222843,
+        "cv_qwk_std": 0.03495345303428325,
+        "cv_within1": 0.9483390748031496,
+        "cv_mae": 0.36151574803149605,
+        "cv_time_s": 2.6322550773620605
+      }
+    ],
+    [
+      "Ridge_Ordinal_Regressor",
+      {
+        "cv_accuracy": 0.6431594488188976,
+        "cv_accuracy_std": 0.02070782725399611,
+        "cv_qwk": 0.8054811313360671,
+        "cv_qwk_std": 0.006320929633459804,
+        "cv_within1": 0.9249015748031496,
+        "cv_mae": 0.4569758858267717,
+        "cv_time_s": 0.6132156848907471
+      }
+    ]
+  ],
+  "cv_scores": {
+    "XGBoost_Classifier": {
+      "cv_accuracy": 0.7151943897637796,
+      "cv_accuracy_std": 0.014187425393101765,
+      "cv_qwk": 0.8464058597594523,
+      "cv_qwk_std": 0.0406084518836035,
+      "cv_within1": 0.9499261811023623,
+      "cv_mae": 0.3614665354330709,
+      "cv_time_s": 3.531789541244507
+    },
+    "HistGradientBoosting_Classifier": {
+      "cv_accuracy": 0.708919783464567,
+      "cv_accuracy_std": 0.03541594484414186,
+      "cv_qwk": 0.8544281753181867,
+      "cv_qwk_std": 0.03379993103971553,
+      "cv_within1": 0.9514886811023622,
+      "cv_mae": 0.3615034448818898,
+      "cv_time_s": 6.431358098983765
+    },
+    "RandomForest_Classifier": {
+      "cv_accuracy": 0.7214320866141732,
+      "cv_accuracy_std": 0.0183189559672705,
+      "cv_qwk": 0.8444819332864164,
+      "cv_qwk_std": 0.02213581566450058,
+      "cv_within1": 0.9467765748031496,
+      "cv_mae": 0.3568159448818898,
+      "cv_time_s": 1.903451681137085
+    },
+    "XGBoost_Ordinal_Regressor": {
+      "cv_accuracy": 0.6931963582677165,
+      "cv_accuracy_std": 0.028600724136970606,
+      "cv_qwk": 0.8472440512322758,
+      "cv_qwk_std": 0.03069253100148435,
+      "cv_within1": 0.9483759842519686,
+      "cv_mae": 0.37565206692913383,
+      "cv_time_s": 1.037304401397705
+    },
+    "HistGradientBoosting_Regressor": {
+      "cv_accuracy": 0.6869217519685039,
+      "cv_accuracy_std": 0.05427193323061744,
+      "cv_qwk": 0.8601877167985723,
+      "cv_qwk_std": 0.028315886569487754,
+      "cv_within1": 0.9546013779527559,
+      "cv_mae": 0.37102608267716536,
+      "cv_time_s": 1.6189756393432617
+    },
+    "RandomForest_Regressor": {
+      "cv_accuracy": 0.6776082677165355,
+      "cv_accuracy_std": 0.01371828214662481,
+      "cv_qwk": 0.8539787095969391,
+      "cv_qwk_std": 0.025774053149811838,
+      "cv_within1": 0.9561884842519686,
+      "cv_mae": 0.38185285433070865,
+      "cv_time_s": 3.233511209487915
+    },
+    "Ridge_Ordinal_Regressor": {
+      "cv_accuracy": 0.6431594488188976,
+      "cv_accuracy_std": 0.02070782725399611,
+      "cv_qwk": 0.8054811313360671,
+      "cv_qwk_std": 0.006320929633459804,
+      "cv_within1": 0.9249015748031496,
+      "cv_mae": 0.4569758858267717,
+      "cv_time_s": 0.6132156848907471
+    },
+    "Hybrid_XGB_Ensemble": {
+      "cv_accuracy": 0.7151697834645669,
+      "cv_accuracy_std": 0.025101723912835387,
+      "cv_qwk": 0.8443884134222843,
+      "cv_qwk_std": 0.03495345303428325,
+      "cv_within1": 0.9483390748031496,
+      "cv_mae": 0.36151574803149605,
+      "cv_time_s": 2.6322550773620605
+    }
+  }
+}

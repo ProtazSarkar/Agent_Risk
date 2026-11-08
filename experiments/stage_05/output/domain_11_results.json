@@ -1,0 +1,147 @@
+{
+  "domain_id": "domain_11",
+  "domain_name": "Information Quality",
+  "dev_instances": 147,
+  "dev_positives": 5,
+  "accuracy_default": 0.9795918367346939,
+  "f1_default": 0.5714285714285714,
+  "precision_default": 1.0,
+  "recall_default": 0.4,
+  "roc_auc": 0.8056338028169014,
+  "optimal_threshold": 0.2,
+  "accuracy_opt": 0.9795918367346939,
+  "f1_opt": 0.6666666666666666,
+  "precision_opt": 0.75,
+  "recall_opt": 0.6,
+  "confusion_matrix_default": [
+    [
+      142,
+      0
+    ],
+    [
+      3,
+      2
+    ]
+  ],
+  "confusion_matrix_opt": [
+    [
+      141,
+      1
+    ],
+    [
+      2,
+      3
+    ]
+  ],
+  "prob_min": 0.010182544589042664,
+  "prob_max": 0.9804490208625793,
+  "prob_mean": 0.030874300748109818,
+  "prob_std": 0.1198163852095604,
+  "trace_samples": [
+    {
+      "example_id": "AGENTRISK-004",
+      "prob": 0.0102,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-051",
+      "prob": 0.0103,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-092",
+      "prob": 0.0119,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-159",
+      "prob": 0.0102,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-189",
+      "prob": 0.0103,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-223",
+      "prob": 0.0104,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-282",
+      "prob": 0.0103,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-322",
+      "prob": 0.0102,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-360",
+      "prob": 0.0102,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-409",
+      "prob": 0.0102,
+      "prediction": "Other (0)",
+      "ground_truth": "Information Quality (1)",
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-465",
+      "prob": 0.0103,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-507",
+      "prob": 0.0104,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-536",
+      "prob": 0.0103,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-580",
+      "prob": 0.0104,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-613",
+      "prob": 0.0104,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    }
+  ]
+}

@@ -89,6 +89,7 @@ models/lora_adapters/*
 *.bin
 *.onnx
 *.safetensors
+*.joblib
 
 # Project specific: Datasets - Completely ignore all data contents and downloaded benchmarks
 data/*

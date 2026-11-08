@@ -1,0 +1,147 @@
+{
+  "domain_id": "domain_05",
+  "domain_name": "Operational / Service",
+  "dev_instances": 145,
+  "dev_positives": 14,
+  "accuracy_default": 0.9379310344827586,
+  "f1_default": 0.6896551724137931,
+  "precision_default": 0.6666666666666666,
+  "recall_default": 0.7142857142857143,
+  "roc_auc": 0.9203925845147218,
+  "optimal_threshold": 0.78,
+  "accuracy_opt": 0.9241379310344827,
+  "f1_opt": 0.5925925925925926,
+  "precision_opt": 0.6153846153846154,
+  "recall_opt": 0.5714285714285714,
+  "confusion_matrix_default": [
+    [
+      126,
+      5
+    ],
+    [
+      4,
+      10
+    ]
+  ],
+  "confusion_matrix_opt": [
+    [
+      126,
+      5
+    ],
+    [
+      6,
+      8
+    ]
+  ],
+  "prob_min": 0.03453422337770462,
+  "prob_max": 0.951192319393158,
+  "prob_mean": 0.1331518441438675,
+  "prob_std": 0.2621537446975708,
+  "trace_samples": [
+    {
+      "example_id": "AGENTRISK-004",
+      "prob": 0.0401,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-051",
+      "prob": 0.0366,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-092",
+      "prob": 0.0355,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-159",
+      "prob": 0.036,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-189",
+      "prob": 0.0372,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-223",
+      "prob": 0.0365,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-282",
+      "prob": 0.0359,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-322",
+      "prob": 0.0347,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-360",
+      "prob": 0.0354,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-409",
+      "prob": 0.0351,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-465",
+      "prob": 0.0346,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-507",
+      "prob": 0.0355,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-536",
+      "prob": 0.0355,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-580",
+      "prob": 0.4615,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-613",
+      "prob": 0.0368,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    }
+  ]
+}

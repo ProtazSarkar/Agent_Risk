@@ -33,6 +33,8 @@ from sklearn.metrics import (
 
 STAGE_DIR = Path(__file__).resolve().parent.parent
 ROOT_DIR = STAGE_DIR.parent.parent
+if str(ROOT_DIR) not in sys.path:
+    sys.path.insert(0, str(ROOT_DIR))
 
 try:
     from experiments.stage_05.domain_01.model import SemanticPrototypeClassifier

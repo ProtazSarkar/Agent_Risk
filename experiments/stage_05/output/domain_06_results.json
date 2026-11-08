@@ -1,0 +1,147 @@
+{
+  "domain_id": "domain_06",
+  "domain_name": "Physical / Health",
+  "dev_instances": 145,
+  "dev_positives": 14,
+  "accuracy_default": 0.9172413793103448,
+  "f1_default": 0.6,
+  "precision_default": 0.5625,
+  "recall_default": 0.6428571428571429,
+  "roc_auc": 0.8058887677208288,
+  "optimal_threshold": 0.2,
+  "accuracy_opt": 0.9172413793103448,
+  "f1_opt": 0.6,
+  "precision_opt": 0.5625,
+  "recall_opt": 0.6428571428571429,
+  "confusion_matrix_default": [
+    [
+      124,
+      7
+    ],
+    [
+      5,
+      9
+    ]
+  ],
+  "confusion_matrix_opt": [
+    [
+      124,
+      7
+    ],
+    [
+      5,
+      9
+    ]
+  ],
+  "prob_min": 0.003166376380249858,
+  "prob_max": 0.9963341951370239,
+  "prob_mean": 0.11426883935928345,
+  "prob_std": 0.3076580762863159,
+  "trace_samples": [
+    {
+      "example_id": "AGENTRISK-004",
+      "prob": 0.9962,
+      "prediction": "Physical / Health (1)",
+      "ground_truth": "Other (0)",
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-051",
+      "prob": 0.0034,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-092",
+      "prob": 0.0033,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-159",
+      "prob": 0.0038,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-189",
+      "prob": 0.0037,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-223",
+      "prob": 0.0038,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-282",
+      "prob": 0.0032,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-322",
+      "prob": 0.0036,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-360",
+      "prob": 0.0034,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-409",
+      "prob": 0.0047,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-465",
+      "prob": 0.0034,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-507",
+      "prob": 0.0035,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-536",
+      "prob": 0.0038,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-580",
+      "prob": 0.9638,
+      "prediction": "Physical / Health (1)",
+      "ground_truth": "Other (0)",
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-613",
+      "prob": 0.0075,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    }
+  ]
+}

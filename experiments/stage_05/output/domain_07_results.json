@@ -1,0 +1,147 @@
+{
+  "domain_id": "domain_07",
+  "domain_name": "Legal / Compliance",
+  "dev_instances": 147,
+  "dev_positives": 8,
+  "accuracy_default": 0.891156462585034,
+  "f1_default": 0.2,
+  "precision_default": 0.16666666666666666,
+  "recall_default": 0.25,
+  "roc_auc": 0.6528776978417266,
+  "optimal_threshold": 0.79,
+  "accuracy_opt": 0.9115646258503401,
+  "f1_opt": 0.13333333333333333,
+  "precision_opt": 0.14285714285714285,
+  "recall_opt": 0.125,
+  "confusion_matrix_default": [
+    [
+      129,
+      10
+    ],
+    [
+      6,
+      2
+    ]
+  ],
+  "confusion_matrix_opt": [
+    [
+      133,
+      6
+    ],
+    [
+      7,
+      1
+    ]
+  ],
+  "prob_min": 0.07078777998685837,
+  "prob_max": 0.8512598276138306,
+  "prob_mean": 0.156756192445755,
+  "prob_std": 0.20264139771461487,
+  "trace_samples": [
+    {
+      "example_id": "AGENTRISK-004",
+      "prob": 0.0773,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-051",
+      "prob": 0.085,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-092",
+      "prob": 0.8131,
+      "prediction": "Legal / Compliance (1)",
+      "ground_truth": "Other (0)",
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-159",
+      "prob": 0.0743,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-189",
+      "prob": 0.8513,
+      "prediction": "Legal / Compliance (1)",
+      "ground_truth": "Other (0)",
+      "status": "MISS"
+    },
+    {
+      "example_id": "AGENTRISK-223",
+      "prob": 0.0774,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-282",
+      "prob": 0.079,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-322",
+      "prob": 0.073,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-360",
+      "prob": 0.0729,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-409",
+      "prob": 0.073,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-465",
+      "prob": 0.0708,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-507",
+      "prob": 0.0751,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-536",
+      "prob": 0.0733,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-580",
+      "prob": 0.1249,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    },
+    {
+      "example_id": "AGENTRISK-613",
+      "prob": 0.073,
+      "prediction": "Other (0)",
+      "ground_truth": "Other (0)",
+      "status": "CORRECT"
+    }
+  ]
+}
