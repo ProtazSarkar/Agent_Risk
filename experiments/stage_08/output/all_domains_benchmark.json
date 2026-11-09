@@ -1,0 +1,320 @@
+{
+  "suite": "Stage 08: 5-Channel Cross-Attentive Prototype Network (All 11 Domains)",
+  "total_domains": 11,
+  "total_elapsed_seconds": 272.6548993587494,
+  "macro_metrics": {
+    "macro_accuracy": 0.9148124602670058,
+    "macro_f1": 0.7085630271252277,
+    "macro_roc_auc": 0.8505171395661538
+  },
+  "domain_results": [
+    {
+      "domain_id": "domain_01",
+      "domain_name": "No Material Harm",
+      "train_samples": 572,
+      "dev_samples": 143,
+      "elapsed_seconds": 35.87961387634277,
+      "metrics": {
+        "accuracy": 0.8671328671328671,
+        "macro_f1": 0.8661905934498892,
+        "pos_precision": 0.8484848484848485,
+        "pos_recall": 0.8615384615384616,
+        "pos_f1": 0.8549618320610687,
+        "roc_auc": 0.9297830374753453
+      },
+      "confusion_matrix": {
+        "tp": 56,
+        "fn": 9,
+        "fp": 10,
+        "tn": 68
+      },
+      "mean_channel_weights": {
+        "query": 0.0557246208190918,
+        "thought": 0.13284654915332794,
+        "context_actions": 0.15256686508655548,
+        "observations": 0.15671195089817047,
+        "proposed_action": 0.5021499991416931
+      }
+    },
+    {
+      "domain_id": "domain_02",
+      "domain_name": "Privacy / Confidentiality",
+      "train_samples": 552,
+      "dev_samples": 143,
+      "elapsed_seconds": 21.332489490509033,
+      "metrics": {
+        "accuracy": 0.8251748251748252,
+        "macro_f1": 0.793507768728701,
+        "pos_precision": 0.7380952380952381,
+        "pos_recall": 0.6888888888888889,
+        "pos_f1": 0.7126436781609196,
+        "roc_auc": 0.8967120181405895
+      },
+      "confusion_matrix": {
+        "tp": 31,
+        "fn": 14,
+        "fp": 11,
+        "tn": 87
+      },
+      "mean_channel_weights": {
+        "query": 0.2299148142337799,
+        "thought": 0.2752348482608795,
+        "context_actions": 0.2199293076992035,
+        "observations": 0.008891474455595016,
+        "proposed_action": 0.26602956652641296
+      }
+    },
+    {
+      "domain_id": "domain_03",
+      "domain_name": "Security / System Integrity",
+      "train_samples": 207,
+      "dev_samples": 143,
+      "elapsed_seconds": 8.63963532447815,
+      "metrics": {
+        "accuracy": 0.8881118881118881,
+        "macro_f1": 0.7185039370078741,
+        "pos_precision": 0.5,
+        "pos_recall": 0.5,
+        "pos_f1": 0.5,
+        "roc_auc": 0.8479330708661418
+      },
+      "confusion_matrix": {
+        "tp": 8,
+        "fn": 8,
+        "fp": 8,
+        "tn": 119
+      },
+      "mean_channel_weights": {
+        "query": 0.07884567230939865,
+        "thought": 0.4227096736431122,
+        "context_actions": 0.07437734305858612,
+        "observations": 0.21679915487766266,
+        "proposed_action": 0.20726817846298218
+      }
+    },
+    {
+      "domain_id": "domain_04",
+      "domain_name": "Financial / Assets",
+      "train_samples": 171,
+      "dev_samples": 143,
+      "elapsed_seconds": 8.50137734413147,
+      "metrics": {
+        "accuracy": 0.7762237762237763,
+        "macro_f1": 0.5994397759103641,
+        "pos_precision": 0.22857142857142856,
+        "pos_recall": 0.6153846153846154,
+        "pos_f1": 0.3333333333333333,
+        "roc_auc": 0.7597633136094675
+      },
+      "confusion_matrix": {
+        "tp": 8,
+        "fn": 5,
+        "fp": 27,
+        "tn": 103
+      },
+      "mean_channel_weights": {
+        "query": 0.05510803312063217,
+        "thought": 0.05512680858373642,
+        "context_actions": 0.08461125195026398,
+        "observations": 0.7474963068962097,
+        "proposed_action": 0.0576576367020607
+      }
+    },
+    {
+      "domain_id": "domain_05",
+      "domain_name": "Operational / Service",
+      "train_samples": 148,
+      "dev_samples": 143,
+      "elapsed_seconds": 24.425429105758667,
+      "metrics": {
+        "accuracy": 0.9230769230769231,
+        "macro_f1": 0.8010120177103099,
+        "pos_precision": 0.5263157894736842,
+        "pos_recall": 0.8333333333333334,
+        "pos_f1": 0.6451612903225806,
+        "roc_auc": 0.8288804071246819
+      },
+      "confusion_matrix": {
+        "tp": 10,
+        "fn": 2,
+        "fp": 9,
+        "tn": 122
+      },
+      "mean_channel_weights": {
+        "query": 0.20146848261356354,
+        "thought": 0.14532871544361115,
+        "context_actions": 0.19624745845794678,
+        "observations": 0.1623782366514206,
+        "proposed_action": 0.29457712173461914
+      }
+    },
+    {
+      "domain_id": "domain_06",
+      "domain_name": "Physical / Health",
+      "train_samples": 168,
+      "dev_samples": 143,
+      "elapsed_seconds": 32.664016246795654,
+      "metrics": {
+        "accuracy": 0.9090909090909091,
+        "macro_f1": 0.76483238456673,
+        "pos_precision": 0.47368421052631576,
+        "pos_recall": 0.75,
+        "pos_f1": 0.5806451612903226,
+        "roc_auc": 0.9338422391857506
+      },
+      "confusion_matrix": {
+        "tp": 9,
+        "fn": 3,
+        "fp": 10,
+        "tn": 121
+      },
+      "mean_channel_weights": {
+        "query": 0.1999029964208603,
+        "thought": 0.14095057547092438,
+        "context_actions": 0.2132445126771927,
+        "observations": 0.30005568265914917,
+        "proposed_action": 0.14584623277187347
+      }
+    },
+    {
+      "domain_id": "domain_07",
+      "domain_name": "Legal / Compliance",
+      "train_samples": 119,
+      "dev_samples": 143,
+      "elapsed_seconds": 30.198333501815796,
+      "metrics": {
+        "accuracy": 0.958041958041958,
+        "macro_f1": 0.6891304347826087,
+        "pos_precision": 0.3333333333333333,
+        "pos_recall": 0.5,
+        "pos_f1": 0.4,
+        "roc_auc": 0.6636690647482014
+      },
+      "confusion_matrix": {
+        "tp": 2,
+        "fn": 2,
+        "fp": 4,
+        "tn": 135
+      },
+      "mean_channel_weights": {
+        "query": 0.23077702522277832,
+        "thought": 0.193287193775177,
+        "context_actions": 0.22004014253616333,
+        "observations": 0.18721438944339752,
+        "proposed_action": 0.1686812937259674
+      }
+    },
+    {
+      "domain_id": "domain_08",
+      "domain_name": "Reputational / Social / Psychological",
+      "train_samples": 110,
+      "dev_samples": 143,
+      "elapsed_seconds": 27.05029034614563,
+      "metrics": {
+        "accuracy": 0.9300699300699301,
+        "macro_f1": 0.5650851581508516,
+        "pos_precision": 0.1,
+        "pos_recall": 0.5,
+        "pos_f1": 0.16666666666666666,
+        "roc_auc": 0.8049645390070922
+      },
+      "confusion_matrix": {
+        "tp": 1,
+        "fn": 1,
+        "fp": 9,
+        "tn": 132
+      },
+      "mean_channel_weights": {
+        "query": 0.2445606142282486,
+        "thought": 0.2507190704345703,
+        "context_actions": 0.08828338980674744,
+        "observations": 0.16438055038452148,
+        "proposed_action": 0.25205641984939575
+      }
+    },
+    {
+      "domain_id": "domain_09",
+      "domain_name": "Discrimination / Fairness",
+      "train_samples": 105,
+      "dev_samples": 143,
+      "elapsed_seconds": 26.0205020904541,
+      "metrics": {
+        "accuracy": 1.0,
+        "macro_f1": 1.0,
+        "pos_precision": 1.0,
+        "pos_recall": 1.0,
+        "pos_f1": 1.0,
+        "roc_auc": 1.0
+      },
+      "confusion_matrix": {
+        "tp": 1,
+        "fn": 0,
+        "fp": 0,
+        "tn": 142
+      },
+      "mean_channel_weights": {
+        "query": 0.2855325937271118,
+        "thought": 0.16772666573524475,
+        "context_actions": 0.26066854596138,
+        "observations": 0.05545436963438988,
+        "proposed_action": 0.23061786592006683
+      }
+    },
+    {
+      "domain_id": "domain_10",
+      "domain_name": "Environmental",
+      "train_samples": 106,
+      "dev_samples": 143,
+      "elapsed_seconds": 25.876688480377197,
+      "metrics": {
+        "accuracy": 0.993006993006993,
+        "macro_f1": 0.4982456140350877,
+        "pos_precision": 0.0,
+        "pos_recall": 0.0,
+        "pos_f1": 0.0,
+        "roc_auc": 0.9154929577464789
+      },
+      "confusion_matrix": {
+        "tp": 0,
+        "fn": 1,
+        "fp": 0,
+        "tn": 142
+      },
+      "mean_channel_weights": {
+        "query": 0.1045423150062561,
+        "thought": 0.5195857882499695,
+        "context_actions": 0.14476005733013153,
+        "observations": 0.1856238842010498,
+        "proposed_action": 0.04548799246549606
+      }
+    },
+    {
+      "domain_id": "domain_11",
+      "domain_name": "Information Quality",
+      "train_samples": 107,
+      "dev_samples": 143,
+      "elapsed_seconds": 27.123499393463135,
+      "metrics": {
+        "accuracy": 0.993006993006993,
+        "macro_f1": 0.4982456140350877,
+        "pos_precision": 0.0,
+        "pos_recall": 0.0,
+        "pos_f1": 0.0,
+        "roc_auc": 0.7746478873239436
+      },
+      "confusion_matrix": {
+        "tp": 0,
+        "fn": 1,
+        "fp": 0,
+        "tn": 142
+      },
+      "mean_channel_weights": {
+        "query": 0.23189592361450195,
+        "thought": 0.19865572452545166,
+        "context_actions": 0.17444273829460144,
+        "observations": 0.207311749458313,
+        "proposed_action": 0.18769387900829315
+      }
+    }
+  ]
+}

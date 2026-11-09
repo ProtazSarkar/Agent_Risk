@@ -1,0 +1,28 @@
+{
+  "domain_id": "domain_05",
+  "domain_name": "Operational / Service",
+  "train_samples": 148,
+  "dev_samples": 143,
+  "elapsed_seconds": 24.425429105758667,
+  "metrics": {
+    "accuracy": 0.9230769230769231,
+    "macro_f1": 0.8010120177103099,
+    "pos_precision": 0.5263157894736842,
+    "pos_recall": 0.8333333333333334,
+    "pos_f1": 0.6451612903225806,
+    "roc_auc": 0.8288804071246819
+  },
+  "confusion_matrix": {
+    "tp": 10,
+    "fn": 2,
+    "fp": 9,
+    "tn": 122
+  },
+  "mean_channel_weights": {
+    "query": 0.20146848261356354,
+    "thought": 0.14532871544361115,
+    "context_actions": 0.19624745845794678,
+    "observations": 0.1623782366514206,
+    "proposed_action": 0.29457712173461914
+  }
+}

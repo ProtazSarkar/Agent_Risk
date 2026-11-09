@@ -32,15 +32,21 @@ The `experiments/` directory holds empirical research pipelines, tabular feature
   - Encodes summaries with `all-MiniLM-L6-v2` with **0.0% truncation** (100% context retained).
   - Deploys 11 isolated domain prototype classifiers achieving **91.25% Macro Accuracy** and **0.8285 Macro ROC-AUC**.
 
-- **[`stage_06/`](stage_06/) - Multi-Domain Probability Ensemble & Feature Preparation Pipeline**:
-  - Bridges Stage 05 domain models with Stage 07 severity models.
-  - Extracts 37 engineered tabular features: 11 domain probabilities, compound harm statistics, domain entropy, high-consequence flags, PCA latents, and text keyword indicators.
-  - Generates `train_severity_features.csv` and `dev_severity_features.csv`.
+- **[`stage_06/`](stage_06/) - Consolidated Multi-Domain Ensemble & Risk Severity Suite (Levels 1 to 5)**:
+  - Consolidates 11-domain probability extraction and 37 engineered tabular features.
+  - Trains gradient-boosted trees, random forests, and ordinal regressors predicting risk levels 1–5.
+  - Achieves **85.80% Within-1 Accuracy**, **0.6895 QWK**, **0.5966 MAE**, and **89.80% High-Confidence Accuracy** on held-out SemEval dev data.
 
-- **[`stage_07/`](stage_07/) - Tree-Based & Regression Severity Suite (Levels 1 to 5)**:
-  - Final ordinal risk severity predictor evaluating XGBoost, HistGradientBoosting, Random Forest, Ordinal Regressors, and Hybrid Ensembles.
-  - Generates predictive confidence scores ($\max_k P(y=k)$) for every prediction.
-  - Achieves **62.24% Exact Accuracy**, **86.71% Within-1 Accuracy**, **0.6805 QWK**, and **89.80% High-Confidence Accuracy** on held-out SemEval dev data.
+- **[`stage_07/`](stage_07/) - Multi-Section Chunked Embedding Optimizer (Domain 01)**:
+  - Disentangles interactions into 4 semantic sections (`[USER]`, `[ACTION]` + proposed action, `[THOUGHT]`, `[OBSERVATION]`).
+  - Implements sliding chunking (120 words) with mean pooling to eliminate the 256-token cutoff defect.
+  - Dynamic `SectionEmbeddingOptimizer` learns section importance attention, achieving **84.62% Exact Accuracy** and **0.8483 ROC-AUC** on real held-out SemEval dev data.
+
+- **[`stage_08/`](stage_08/) - 5-Channel Cross-Attentive Prototype Network Suite (All 11 Domains)**:
+  - Disentangles interactions into 5 dedicated semantic channels (`query`, `thought`, `context_actions`, `observations`, `proposed_action`), resolving semantic dilution.
+  - Multi-Head Self-Attention bridge enables direct communication between observations and pending proposed actions.
+  - Domain prototype keys act as active queries cross-attending across interaction tokens.
+  - Combined BCE + Contrastive Prototype Margin loss achieves **91.48% Macro Accuracy** and **0.8505 Macro ROC-AUC** across all 11 domains on held-out SemEval dev data.
 
 ---
 
@@ -62,10 +68,14 @@ python experiments/stage_04/domain_01/main.py
 # Stage 05 Master 11-Domain Benchmark Suite
 python experiments/stage_05/run_all_domains.py
 
-# Stage 06 Multi-Domain Feature Preparation Pipeline
+# Stage 06 Multi-Domain Feature & Severity Benchmark
 python experiments/stage_06/prepare_dataset.py
+python experiments/stage_06/train.py
+python experiments/stage_06/main.py
 
-# Stage 07 Severity Training & Evaluation
-python experiments/stage_07/train.py
+# Stage 07 Multi-Section Optimizer (Domain 01)
 python experiments/stage_07/main.py
+
+# Stage 08 Master 11-Domain Cross-Attention Suite
+python experiments/stage_08/run_all_domains.py
 ```

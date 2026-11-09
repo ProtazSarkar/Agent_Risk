@@ -1,0 +1,28 @@
+{
+  "domain_id": "domain_10",
+  "domain_name": "Environmental",
+  "train_samples": 106,
+  "dev_samples": 143,
+  "elapsed_seconds": 25.876688480377197,
+  "metrics": {
+    "accuracy": 0.993006993006993,
+    "macro_f1": 0.4982456140350877,
+    "pos_precision": 0.0,
+    "pos_recall": 0.0,
+    "pos_f1": 0.0,
+    "roc_auc": 0.9154929577464789
+  },
+  "confusion_matrix": {
+    "tp": 0,
+    "fn": 1,
+    "fp": 0,
+    "tn": 142
+  },
+  "mean_channel_weights": {
+    "query": 0.1045423150062561,
+    "thought": 0.5195857882499695,
+    "context_actions": 0.14476005733013153,
+    "observations": 0.1856238842010498,
+    "proposed_action": 0.04548799246549606
+  }
+}

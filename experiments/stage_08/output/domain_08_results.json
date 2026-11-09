@@ -1,0 +1,28 @@
+{
+  "domain_id": "domain_08",
+  "domain_name": "Reputational / Social / Psychological",
+  "train_samples": 110,
+  "dev_samples": 143,
+  "elapsed_seconds": 27.05029034614563,
+  "metrics": {
+    "accuracy": 0.9300699300699301,
+    "macro_f1": 0.5650851581508516,
+    "pos_precision": 0.1,
+    "pos_recall": 0.5,
+    "pos_f1": 0.16666666666666666,
+    "roc_auc": 0.8049645390070922
+  },
+  "confusion_matrix": {
+    "tp": 1,
+    "fn": 1,
+    "fp": 9,
+    "tn": 132
+  },
+  "mean_channel_weights": {
+    "query": 0.2445606142282486,
+    "thought": 0.2507190704345703,
+    "context_actions": 0.08828338980674744,
+    "observations": 0.16438055038452148,
+    "proposed_action": 0.25205641984939575
+  }
+}

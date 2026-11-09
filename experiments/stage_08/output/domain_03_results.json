@@ -1,0 +1,28 @@
+{
+  "domain_id": "domain_03",
+  "domain_name": "Security / System Integrity",
+  "train_samples": 207,
+  "dev_samples": 143,
+  "elapsed_seconds": 8.63963532447815,
+  "metrics": {
+    "accuracy": 0.8881118881118881,
+    "macro_f1": 0.7185039370078741,
+    "pos_precision": 0.5,
+    "pos_recall": 0.5,
+    "pos_f1": 0.5,
+    "roc_auc": 0.8479330708661418
+  },
+  "confusion_matrix": {
+    "tp": 8,
+    "fn": 8,
+    "fp": 8,
+    "tn": 119
+  },
+  "mean_channel_weights": {
+    "query": 0.07884567230939865,
+    "thought": 0.4227096736431122,
+    "context_actions": 0.07437734305858612,
+    "observations": 0.21679915487766266,
+    "proposed_action": 0.20726817846298218
+  }
+}

@@ -1,0 +1,28 @@
+{
+  "domain_id": "domain_07",
+  "domain_name": "Legal / Compliance",
+  "train_samples": 119,
+  "dev_samples": 143,
+  "elapsed_seconds": 30.198333501815796,
+  "metrics": {
+    "accuracy": 0.958041958041958,
+    "macro_f1": 0.6891304347826087,
+    "pos_precision": 0.3333333333333333,
+    "pos_recall": 0.5,
+    "pos_f1": 0.4,
+    "roc_auc": 0.6636690647482014
+  },
+  "confusion_matrix": {
+    "tp": 2,
+    "fn": 2,
+    "fp": 4,
+    "tn": 135
+  },
+  "mean_channel_weights": {
+    "query": 0.23077702522277832,
+    "thought": 0.193287193775177,
+    "context_actions": 0.22004014253616333,
+    "observations": 0.18721438944339752,
+    "proposed_action": 0.1686812937259674
+  }
+}

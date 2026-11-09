@@ -1,0 +1,28 @@
+{
+  "domain_id": "domain_11",
+  "domain_name": "Information Quality",
+  "train_samples": 107,
+  "dev_samples": 143,
+  "elapsed_seconds": 27.123499393463135,
+  "metrics": {
+    "accuracy": 0.993006993006993,
+    "macro_f1": 0.4982456140350877,
+    "pos_precision": 0.0,
+    "pos_recall": 0.0,
+    "pos_f1": 0.0,
+    "roc_auc": 0.7746478873239436
+  },
+  "confusion_matrix": {
+    "tp": 0,
+    "fn": 1,
+    "fp": 0,
+    "tn": 142
+  },
+  "mean_channel_weights": {
+    "query": 0.23189592361450195,
+    "thought": 0.19865572452545166,
+    "context_actions": 0.17444273829460144,
+    "observations": 0.207311749458313,
+    "proposed_action": 0.18769387900829315
+  }
+}

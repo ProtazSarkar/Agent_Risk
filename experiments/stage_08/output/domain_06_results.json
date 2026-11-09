@@ -1,0 +1,28 @@
+{
+  "domain_id": "domain_06",
+  "domain_name": "Physical / Health",
+  "train_samples": 168,
+  "dev_samples": 143,
+  "elapsed_seconds": 32.664016246795654,
+  "metrics": {
+    "accuracy": 0.9090909090909091,
+    "macro_f1": 0.76483238456673,
+    "pos_precision": 0.47368421052631576,
+    "pos_recall": 0.75,
+    "pos_f1": 0.5806451612903226,
+    "roc_auc": 0.9338422391857506
+  },
+  "confusion_matrix": {
+    "tp": 9,
+    "fn": 3,
+    "fp": 10,
+    "tn": 121
+  },
+  "mean_channel_weights": {
+    "query": 0.1999029964208603,
+    "thought": 0.14095057547092438,
+    "context_actions": 0.2132445126771927,
+    "observations": 0.30005568265914917,
+    "proposed_action": 0.14584623277187347
+  }
+}

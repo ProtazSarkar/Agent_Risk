@@ -1,0 +1,28 @@
+{
+  "domain_id": "domain_01",
+  "domain_name": "No Material Harm",
+  "train_samples": 572,
+  "dev_samples": 143,
+  "elapsed_seconds": 35.87961387634277,
+  "metrics": {
+    "accuracy": 0.8671328671328671,
+    "macro_f1": 0.8661905934498892,
+    "pos_precision": 0.8484848484848485,
+    "pos_recall": 0.8615384615384616,
+    "pos_f1": 0.8549618320610687,
+    "roc_auc": 0.9297830374753453
+  },
+  "confusion_matrix": {
+    "tp": 56,
+    "fn": 9,
+    "fp": 10,
+    "tn": 68
+  },
+  "mean_channel_weights": {
+    "query": 0.0557246208190918,
+    "thought": 0.13284654915332794,
+    "context_actions": 0.15256686508655548,
+    "observations": 0.15671195089817047,
+    "proposed_action": 0.5021499991416931
+  }
+}

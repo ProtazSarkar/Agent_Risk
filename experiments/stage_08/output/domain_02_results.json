@@ -1,0 +1,28 @@
+{
+  "domain_id": "domain_02",
+  "domain_name": "Privacy / Confidentiality",
+  "train_samples": 552,
+  "dev_samples": 143,
+  "elapsed_seconds": 21.332489490509033,
+  "metrics": {
+    "accuracy": 0.8251748251748252,
+    "macro_f1": 0.793507768728701,
+    "pos_precision": 0.7380952380952381,
+    "pos_recall": 0.6888888888888889,
+    "pos_f1": 0.7126436781609196,
+    "roc_auc": 0.8967120181405895
+  },
+  "confusion_matrix": {
+    "tp": 31,
+    "fn": 14,
+    "fp": 11,
+    "tn": 87
+  },
+  "mean_channel_weights": {
+    "query": 0.2299148142337799,
+    "thought": 0.2752348482608795,
+    "context_actions": 0.2199293076992035,
+    "observations": 0.008891474455595016,
+    "proposed_action": 0.26602956652641296
+  }
+}

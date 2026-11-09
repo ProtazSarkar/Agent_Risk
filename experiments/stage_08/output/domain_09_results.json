@@ -1,0 +1,28 @@
+{
+  "domain_id": "domain_09",
+  "domain_name": "Discrimination / Fairness",
+  "train_samples": 105,
+  "dev_samples": 143,
+  "elapsed_seconds": 26.0205020904541,
+  "metrics": {
+    "accuracy": 1.0,
+    "macro_f1": 1.0,
+    "pos_precision": 1.0,
+    "pos_recall": 1.0,
+    "pos_f1": 1.0,
+    "roc_auc": 1.0
+  },
+  "confusion_matrix": {
+    "tp": 1,
+    "fn": 0,
+    "fp": 0,
+    "tn": 142
+  },
+  "mean_channel_weights": {
+    "query": 0.2855325937271118,
+    "thought": 0.16772666573524475,
+    "context_actions": 0.26066854596138,
+    "observations": 0.05545436963438988,
+    "proposed_action": 0.23061786592006683
+  }
+}
