@@ -48,6 +48,12 @@ The `experiments/` directory holds empirical research pipelines, tabular feature
   - Domain prototype keys act as active queries cross-attending across interaction tokens.
   - Combined BCE + Contrastive Prototype Margin loss achieves **91.48% Macro Accuracy** and **0.8505 Macro ROC-AUC** across all 11 domains on held-out SemEval dev data.
 
+- **[`stage_09/`](stage_09/) - Dedicated Ordinal Severity Suite & Exact Accuracy Optimization (Levels 1 to 5)**:
+  - Resolves the exact severity accuracy bottleneck observed in Stage 06 (59.66% exact vs 85.80% within-1).
+  - Ingests 39 high-fidelity features from all 11 Stage 08 5-channel models and interaction dynamics.
+  - Implements Frank & Hall (2001) Cumulative Link Ordinal Decomposition and hierarchical coarse-to-fine gating.
+  - Lifts **Exact Severity Accuracy from 59.66% to 73.43%** (+13.77% absolute gain) and **Within-1 Accuracy from 85.80% to 91.61%** (+5.81% absolute gain) with **81.82% Exact Accuracy** on high-confidence samples ($\ge 0.90$).
+
 ---
 
 ## 🚀 Running Experiments
@@ -78,4 +84,9 @@ python experiments/stage_07/main.py
 
 # Stage 08 Master 11-Domain Cross-Attention Suite
 python experiments/stage_08/run_all_domains.py
+
+# Stage 09 Dedicated Ordinal Severity Suite
+python experiments/stage_09/prepare_dataset.py
+python experiments/stage_09/train.py
+python experiments/stage_09/main.py
 ```
